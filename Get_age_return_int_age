@@ -1,0 +1,16 @@
+import re
+
+def get_age(age_input):
+    # Extract the numerical age from the input string
+    match = re.search(r'\d+', age_input)
+    if match:
+        age = int(match.group())
+        if 0 <= age <= 9:  # Corrected condition for age between 0 and 9
+            return age
+        else:
+            return "Age must be between 0 and 9 years."
+    else:
+        return "Invalid input format. Please enter age like '2 years old...'"
+
+# In the main part of your script:
+print(get_age(input("Enter 0 to 9 years like 2 years old...")))
