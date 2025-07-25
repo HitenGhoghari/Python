@@ -1,0 +1,8 @@
+deffindNeedle(l):
+    n = l.index("needle")
+    return f"found the needle at position {n}"
+
+l=input("enter a string where needle is in :")
+a=l.split()
+print(a)
+print(findNeedle(a))
