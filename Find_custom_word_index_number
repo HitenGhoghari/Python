@@ -1,4 +1,4 @@
-deffindNeedle(l):
+def findNeedle(l):
     n = l.index("needle")
     return f"found the needle at position {n}"
 
